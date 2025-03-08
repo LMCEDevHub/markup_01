@@ -15,9 +15,10 @@ Este es un proyecto basado en el desafío [Huddle landing page with a single int
 
 ## 📂 Estructura del proyecto
 ```
-📁 huddle-landing-page
+📁 markup_01
 ├── 📄 index.html
-├── 🎨 styles.css
+├── 🎨 css
+   ├── 🎨 styles.css
 ├── 📂 images/
 ├── 📜 README.md
 ```
