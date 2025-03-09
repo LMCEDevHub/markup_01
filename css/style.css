@@ -70,7 +70,7 @@ body {
   font-size:1rem;
 }
 
-.hero__btn:active {
+.hero__btn:active, .hero__btn:hover {
   background-color: var(--Soft-Magenta);
   color:var(--Soft-white);
 }
@@ -95,7 +95,7 @@ body {
   min-width: 17px;
 }
 
-.socials__img :active {
+.socials__img :active, .socials__img:hover {
   color:var(--Soft-Mageta);
 }
 
