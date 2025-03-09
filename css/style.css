@@ -2,7 +2,7 @@
   --Violet: hsl(257, 40%, 49%);
   --Soft-Magenta: hsl(300, 69%, 71%);
   --Soft-white: #ffffff;
-
+  --icon-fill: #fff;
   --heading-font: "Poppins", sans-serif;
   --main-font: "Open Sans", sans-serif;
 }
@@ -12,11 +12,19 @@
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  text-decoration: none;
+}
+
 body {
   background-color: var(--Violet);
   font-family: var(--main-font), "Sans Serif";
-  
-  
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .header {
@@ -61,44 +69,50 @@ body {
 }
 
 .hero__btn {
-  color: var(--Violet);
-  border: none;
-  margin-top: 20px;
   border-radius: 2rem;
-  padding: 15px 70px;
+  background-color: var(--Soft-white);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  font-size:1rem;
+  display: block;
+  color: var(--Violet);
+  height: fit-content;
+  margin: 30px auto;
+  line-height: 3rem;
+  width: 60%; 
+  max-width: 250px;
 }
 
-.hero__btn:active, .hero__btn:hover {
+.hero__btn:active,
+.hero__btn:hover {
   background-color: var(--Soft-Magenta);
-  color:var(--Soft-white);
+  color: var(--Soft-white);
+ 
 }
 
 .socials {
   display: flex;
   width: 100%;
-  gap: 10px;
+  gap: 12px;
   justify-content: center;
-  margin-top: 40px;
+  margin: 40px 0px 40px;
 }
 
 .socials__container {
+  margin: 3px;
   width: 5%;
+  aspect-ratio: 1;
 }
 
-.socials__img {
+.socials__icons {
   border: 1px solid #ffffff;
   border-radius: 2rem;
   padding: 3px;
   max-width: 32px;
-  min-width: 17px;
+  width: 17px;
 }
 
-.socials__img :active, .socials__img:hover {
-  color:var(--Soft-Mageta);
+.socials__container:hover {
+  --icon-fill: var(--Soft-Magenta);
 }
-
 
 @media (min-width: 767px) {
   body {
@@ -110,30 +124,50 @@ body {
   }
 
   .header {
-    background-image: none; 
+    background-image: none;
     width: 50%;
   }
 
-  .main{
-  align-self: center;
-  width: 20%;
+  .main {
+    align-self: center;
+    width: 30%;
   }
 
   .hero {
-  text-align: left;
-  width: 100%;
+    text-align: left;
+    width: 100%;
   }
 
-  .hero__title{
+  .hero__title {
     font-size: 1.5rem;
   }
-  
-  .hero__text{
+
+  .hero__text {
     font-size: 1rem;
   }
 
+ .hero__btn {
+  border-radius: 2rem;
+  background-color: var(--Soft-white);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: block;
+  color: var(--Violet);
+  height: fit-content;
+  margin: 30px 0;
+  line-height: 3rem;
+  width: 70%; 
+  max-width: 250px;
+  text-align: center;
+}
+
   .socials {
-    align-self:flex-end;
+    align-self: flex-end;
     width: 20%;
+    margin: 0;
+  }
+
+  .socials__container {
+    margin: 2px;
+    width: 10%;
   }
 }
