@@ -20,7 +20,7 @@ body {
 }
 
 .header {
-  background-image: url(images/bg-mobile.svg);
+  background-image: url(../images/bg-mobile.svg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -103,7 +103,7 @@ body {
 @media (min-width: 767px) {
   body {
     display: flex;
-    background-image: url(images/bg-desktop.svg);
+    background-image: url(../images/bg-desktop.svg);
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
