@@ -67,6 +67,12 @@ body {
   border-radius: 2rem;
   padding: 15px 70px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-size:1rem;
+}
+
+.hero__btn:active {
+  background-color: var(--Soft-Mageta);
+  color:var(--Soft-white);
 }
 
 .socials {
@@ -88,6 +94,11 @@ body {
   max-width: 32px;
   min-width: 17px;
 }
+
+.socials__img :active {
+  color:var(--Soft-Mageta);
+}
+
 
 @media (min-width: 767px) {
   body {
