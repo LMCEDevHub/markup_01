@@ -119,6 +119,7 @@ body {
   body {
     display: flex;
     background-image: url(../images/bg-desktop.svg);
+    max-height: fit-content;
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
@@ -129,12 +130,13 @@ body {
     width: 50%;
   }
 
-  .main {
+  .container {
     align-self: center;
     width: 30%;
   }
 
   .hero {
+    margin-top: 100px;
     text-align: left;
     width: 100%;
   }
@@ -163,12 +165,12 @@ body {
 
   .socials {
     align-self: flex-end;
-    width: 20%;
-    margin: 0;
+    width: 40%;
+    margin-left: auto;
   }
 
   .socials__container {
     margin: 2px;
-    width: 10%;
+    width: 20%;
   }
 }
