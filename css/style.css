@@ -23,7 +23,7 @@ a:visited {
 body {
   background-color: var(--Violet);
   font-family: var(--main-font), "Sans Serif";
-  max-width: 1200px;
+  max-width: 1444px;
   margin: 0 auto;
 }
 
@@ -118,7 +118,6 @@ body {
   body {
     display: flex;
     background-image: url(../images/bg-desktop.svg);
-    max-height: fit-content;
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
