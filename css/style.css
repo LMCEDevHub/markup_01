@@ -121,6 +121,11 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: -5%;
+    align-content: center;
+    
   }
 
   .header {
