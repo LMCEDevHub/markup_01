@@ -100,18 +100,19 @@ body {
   margin: 3px;
   width: 5%;
   aspect-ratio: 1;
-}
-
-.socials__icons {
   border: 1px solid #ffffff;
   border-radius: 2rem;
   padding: 3px;
+}
+
+.socials__icons {
   max-width: 32px;
   width: 17px;
 }
 
 .socials__container:hover {
   --icon-fill: var(--Soft-Magenta);
+  border-color: var(--Soft-Magenta);
 }
 
 @media (min-width: 767px) {
